@@ -13,5 +13,7 @@
         %a{ :href=>"/home"} Questions
         %a{ :href=>"/home"} News
         %a{ :href=>"/home"} Contact
+        #date
+          %p= @current_date
       #main
         =yield :layout
