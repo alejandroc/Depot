@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title Pragprog Books Online Store
+    = stylesheet_link_tag 'depot', :media => 'all'
+  %body{ :id => "store" }
+    #banner
+      = image_tag("logo.png")
+      = @page_title || "Pragmatic Bookshelf"
+    #columns
+      #side
+        %a{ :href=>"/home"} Home
+        %a{ :href=>"/home"} Questions
+        %a{ :href=>"/home"} News
+        %a{ :href=>"/home"} Contact
+      #main
+        =yield :layout
