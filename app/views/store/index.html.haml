@@ -6,4 +6,4 @@
     != product.description
     .price-line
       %span{ :class => 'price' }
-        = product.price
+        = number_to_currency( product.price )
