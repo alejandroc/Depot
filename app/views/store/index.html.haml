@@ -1,0 +1,9 @@
+%h1 Catalog
+- for product in @products
+  .entry
+    = image_tag( product.image_url )
+    %h3= product.title
+    != product.description
+    .price-line
+      %span{ :class => 'price' }
+        = product.price
